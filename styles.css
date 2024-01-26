@@ -1,0 +1,141 @@
+
+body{
+    background-color: #FFFF;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 20px;
+    box-shadow: 0px 10px 10px -15px #111;
+    gap: 20px;
+}
+
+#home, #menu, #about{
+    cursor: pointer;
+    background: none;
+    color: #303B5B;
+    border: none;
+    border-bottom: solid 3px transparent;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.logo{
+    display: flex;
+    gap: 20px;
+}
+
+
+.selected{
+    border-bottom-color: #FFB534 !important;
+}
+.hover{
+    border-bottom-color: #FFB534 !important;
+}
+.buy{
+    background: #FFB534;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.buy:hover{
+    background-color: #303B5B;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+.hero--container
+{
+    display: flex;
+    gap: 100px;
+}
+.hero--img{
+    max-width: 100%;
+    width: 300px;
+    border-radius: 10px;
+}
+.hero--main-text{
+    color:#FFB534;
+    font-size: 54px;
+}
+.home-menu{
+    cursor: pointer;
+    padding: 40px 60px;
+    background: none;
+    font-size: 32px;
+    border: 3px solid #303B5B;
+    color:#303B5B;
+    font-weight: bolder;
+
+}
+.home-menu:hover{
+    background-color: #303B5B;
+    color: #FFF;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    gap: 20px;
+
+}
+.menu-item:hover{
+    border-color: rgba(0,0,0,0.2);;
+}
+.menu--img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.about{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+}
+.about h1{
+    font-size: 64px;
+}
+
+/*Media queries*/
+
+@media (max-width: 870px)
+{
+    #logo{
+        margin-left: 10px;
+        margin-right: 60px;
+    }
+    .icons{
+        margin-right: 10px;
+
+    }
+}
